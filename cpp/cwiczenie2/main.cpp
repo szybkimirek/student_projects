@@ -11,22 +11,19 @@ cout<<"wprowadz swoja wage w kilogramach"<<endl;
 cin>>kilogramy;
 cout<<"wprowadz swoj wzrost w metrach"<<endl;
 cin>>metry;
-cout<<kilogramy/metry*2<<endl;
-if(kilogramy/metry*2<18.5){
-cout<<"Niedowaga"<<endl;
+float BMI=kilogramy/(metry*metry);
+if( BMI<18.5){
+cout<<" niedowaga"<<endl;
 }
-if(kilogramy/metry*2<25){
-cout<<"W normie"<<endl;
+if (BMI>18.5 && BMI<25){
+cout<<" w normie"<<endl;
 }
-if(kilogramy/metry*2>25){
+if (BMI>25 && BMI<35){
 cout<<"Nadwaga"<<endl;
 }
-if(kilogramy/metry*2<30){
-cout<<"otylosc"<<endl;
+if (BMI>35){
+cout<<"Otylosc"<<endl;
 }
-
-
-
 
 
 
